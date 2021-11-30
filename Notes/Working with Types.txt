@@ -1,0 +1,8 @@
+Core Types 
+- number (no special types like floats or integers)
+- string ('', "", ``)
+- boolean (true, false)
+// The key difference is: JavaScript uses 'dynamic types' (resolved at runtime), typescript uses 'static types' (set during development). 
+Type Inference (JS does its best to understand the type of a variable on its own unlike typescript).
+
+- object {age: 30}

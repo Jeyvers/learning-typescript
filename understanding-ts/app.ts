@@ -1,17 +1,16 @@
-//Core data types 
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-    const result = n1 + n2;
-    if(showResult) {
-        console.log(phrase + result)
+// Union types
+function combine(input1: number | string, input2: number | string) {
+    let result;
+    if(typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
     } else {
-        return result;
+        result = input1.toString() + input2.toString();
     }
+    return result;
 }
 
+const combinedAges = combine(30, 26);
 
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const resultPhrase = 'Result is: '
-add(number1, number2, printResult, resultPhrase);
+const combinedNames = combine('Max', 'Anna')
 
+console.log(combinedAges, combinedNames)

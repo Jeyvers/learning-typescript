@@ -2,7 +2,7 @@
 function combine(
     input1: number | string, 
     input2: number | string, 
-    resultConversion:'as-number' | 'as-text'
+    resultConversion:'as-number' | 'as-text' //Literal type
     ) {
     let result;
     if(typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {

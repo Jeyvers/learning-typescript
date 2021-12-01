@@ -1,2 +1,5 @@
 
 The TypeScript Compiler
+In order to make the compiler run every time you save and want to see a result in development, you can use (tsc app.ts --watch) || (tsc app.ts -w) to watch the file. Ctrl C to quit. 
+For multiple files, tsc --init.
+Then rerun tsc -w .

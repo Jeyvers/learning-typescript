@@ -12,3 +12,8 @@ TypeScript types
 - tuple [1, 2] fixed length and fixed type
 - enum enum{NEW, OLD} Added by TypeScript: Automatically enumerated global constant identifiers
 - any (most flexible, takes any kind of value);
+
+Type Assertion 
+let message; //By default, any declaration without assigment takes the any type, in order to break this, you need assert the type of the variable so TypeScript knows exactly what you're doing. Ways to assert types: 
+1. (<string>message)
+2. (message as string);

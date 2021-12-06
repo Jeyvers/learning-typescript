@@ -10,26 +10,9 @@
 // Prefixing the field with the chosen access modifiers gives it the access chosen. By default, every field has a public modifier
 // Creating your constructor variables with an access modifiers simplifies your code. 
 
-class Point {
-    constructor(private x?: number, private y?: number) {
-    } 
-
-    draw() {
-        console.log('X: ' + this.x + ', Y: ' + this.y);
-    }
-    // Use case 1
-    getX() {
-        return this.x;
-    }
-    // setX 
-    setX(value: number) {
-        if (value < 0) {
-            throw new Error('Value cannot be less than 0')
-        }
-    }
-}
-
+import { Point } from './point';
 let point = new Point(20, 28);
-point.setX(10);
+let x = point.X;
+point.X = 10;
 point.draw();
 

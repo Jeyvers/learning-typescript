@@ -6,7 +6,7 @@ Core Types
 Type Inference (JS does its best to understand the type of a variable on its own unlike typescript).
 
 - object {age: 30}
-- arrays [1,2,3] Any JavaScript array is supported, types can be flexible or stict (regardin the element types)
+- arrays [1,2,3] Any JavaScript array is supported, types can be flexible or strict (regarding the element types)
 
 TypeScript types 
 - tuple [1, 2] fixed length and fixed type

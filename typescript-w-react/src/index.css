@@ -8,3 +8,11 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.dragactive {
+  background-color: green;
+}
+
+.dragcomplete {
+  background-color: yellow;
+}

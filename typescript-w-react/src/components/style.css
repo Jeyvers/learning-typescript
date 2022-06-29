@@ -1,6 +1,6 @@
 .input {
   display: flex;
-  width: 90%;
+  width: 95%;
   position: relative;
   align-items: center;
 }
@@ -44,22 +44,41 @@
   box-shadow: 0 0 5px black;
 }
 
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .todos {
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  flex-wrap: wrap;
+  width: 47.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background: rgb(50, 195, 205);
+}
+
+.todos-heading {
+  font-size: 30px;
+  color: white;
 }
 
 .todos-single {
   display: flex;
-  width: 29.5%;
+  transition: 0.2s;
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
   background: yellowgreen;
 }
 
+.todos-single:hover {
+  box-shadow: 0 0 2px black;
+  transform: scale(1.03);
+}
 .todos-single-text {
   flex: 1;
   padding: 5px;
@@ -84,19 +103,31 @@
 }
 
 @media (max-width: 700px) {
+  .todos {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
   .input {
-    width: 90%;
+    width: 95%;
   }
 
   .todos {
-    width: 90%;
+    width: 95%;
+    margin-bottom: 10px;
   }
 
-  .todos-single {
-    width: 100%;
+  .container {
+    width: 95%;
+    flex-direction: column;
   }
 }
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.remove {
+  background-color: rgb(235, 103, 80);
 }

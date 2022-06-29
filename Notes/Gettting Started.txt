@@ -24,7 +24,7 @@ Course Outline
 - Decorators
 - Time to practice - full project
 - Working with name spaces and modules
-- Webpack & TypeScript
+- Webpack & TypeScriptj/'
 - Third party libraries and typescript
 - React + TypeScript & NodeJS, Express and TypeScript
 

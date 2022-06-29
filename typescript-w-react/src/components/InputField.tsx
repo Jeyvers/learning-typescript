@@ -6,7 +6,7 @@ interface Props {
   setTodo: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const InputField = ({ todo, setTodo }: Props) => {
+const InputField: React.FC<Props> = ({ todo, setTodo }) => {
   return (
     <div>
       <form action='' className='input'>
